@@ -1,0 +1,1 @@
+git log -S<insert string here>: --reverse -p -M --follow --stat -- <insert filename here> | grep -n Author | head -1 | awk -F "[<|>]" '{print $2}'
